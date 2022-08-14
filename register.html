@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>FISHINHG HOTSPOT DATABASE</title>
+  </head>
+
+	<body>
+        <script>
+            function register()
+	{
+		var uname = document.getElementById("email").value;
+		if(uname ==''|| document.getElementById("ltt").value=='' || document.getElementById("lngt").value=='' || 
+        document.getElementById("time1").value=='' || document.getElementById("time2").value=='' || document.getElementById("cno").value==''
+		|| document.getElementById("bid").value=='')
+		{
+			alert("Please Enter all the Details.");
+        }
+		else
+		{
+	alert('Thank You for updating your fishing hotspot Have a nice day !');
+			}
+	}
+        </script>
+	<!-- Main div code -->
+	<div id="main">
+	<div class="h-tag">
+	<center><h2>LOAD YOUR LOACTION DATA IN THE DATABASE</h2></center>
+	</div>
+	<!-- Login box -->
+	<div class="login">
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+	<tr>
+	<td>Enter User Name :</td>
+	<td><input type="text" placeholder="Enter user name" id="email" class="tb" /></td>
+	</tr>
+	<td>Enter Boat number/ID :</td>
+	<td><input type="text" placeholder="Enter Boat ID" id="bid" class="tb" /></td>
+	</tr>
+	<tr>
+	<td>latitude :</td>
+	<td><input type="number" placeholder="latitude" id="ltt" class="tb" /></td>
+	</tr>
+    <tr>
+        <td>longitude :</td>
+        <td><input type="number" placeholder="longitude" id="lngt" class="tb" /></td>
+    </tr>
+	<tr>
+        <td>Date and time of journey :</td>
+        <td><input type="datetime-local" id="time1" class="tb" /></td>
+        </tr>
+    <tr>
+        <td>Expected return date :</td>
+        <td><input type="datetime-local" id="time2" class="tb" /></td>
+        </tr>
+    <tr>
+		<tr>
+			<td>Contact number :</td>
+			<td><input type="number" id="cno" class="tb" /></td>
+			</tr>
+        
+    <td>
+	<input type="submit" value="register" class="btn" onClick="register()" /></td>
+	</tr>
+	</table>
+	</div>
+  	 <!-- login box div ending here.. -->
+	</div>
+	<!-- Main div ending here... -->
+    
+  </body>
+  </html>
+  
